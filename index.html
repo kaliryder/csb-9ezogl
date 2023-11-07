@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Kali Ryder</title>
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="stars"></div>
+    <div class="navbar">
+      <a class="active" href="./index.html">Home</a>
+      <a href="./sculpture.html">Sculpture</a>
+      <a href="./digital.html">Digital</a>
+      <a href="./paper.html">Paper</a>
+      <a href="./interactive.html">Interactive</a>
+      <a href="./about.html">About</a>
+    </div>
+    <div class="bodyContent">
+      <div class="animationParent">
+        <video
+          class="animationChild"
+          width="400"
+          height="200"
+          autoplay
+          loop
+          muted
+        >
+          <source src="backgrounds/vid-name.MP4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="blueNameParent">
+        <img
+          class="blueNameChild"
+          width="400px"
+          height="200px"
+          src="backgrounds/img-indexBG.png"
+        />
+      </div>
+      <div class="headshotParent">
+        <img
+          class="headshotChild"
+          src="backgrounds/img-headshot.PNG"
+          alt="headshot"
+        />
+      </div>
+      <div class="slideParent">
+        <div class="slideChild">
+          <img class="slides" src="slide/img-slide-lean.png" />
+          <img class="slides" src="slide/img-slide-noodle.png" />
+          <img class="slides" src="slide/img-slide-eight.png" />
+          <img class="slides" src="slide/img-slide-snakemouse.png" />
+          <img class="slides" src="slide/img-slide-head.png" />
+          <img class="slides" src="slide/img-slide-jeans.png" />
+        </div>
+      </div>
+      <div>
+        <button class="slideButtons" onclick="plusSlide(-1)">&#10094;</button>
+        <button class="slideButtons" onclick="plusSlide(+1)">&#10095;</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="cursor.js"></script>
+  </body>
+</html>

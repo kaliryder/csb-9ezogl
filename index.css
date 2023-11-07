@@ -1,0 +1,103 @@
+* {
+  cursor: none;
+}
+body {
+  width: 100%;
+  /*background-image: url("backgrounds/img-indexBG.png");*/
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bodyContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column;
+}
+div {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.stars {
+  width: 30px;
+  border-radius: 50px;
+  background-color: hotpink;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration-line: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.5s ease-out;
+}
+a:hover,
+a:focus {
+  background-color: black;
+  color: white;
+}
+
+.slideButtons {
+  color: black;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 90px;
+  text-align: center;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.slides {
+  margin: 0px auto;
+  text-align: center;
+}
+.slideChild {
+  transition: transform 1s;
+}
+.slideParent:hover .slideChild {
+  transform: translateX(30%);
+}
+
+.blueNameChild {
+  padding: 0px;
+  transition: transform 1s;
+}
+.blueNameParent:hover .blueNameChild {
+  transform: translateX(20%);
+}
+.headshotChild {
+  transition: transform 1s;
+}
+.headshotParent:hover .headshotChild {
+  transform: translateX(30%);
+  animation: headshotAnimation 1s ease-in 3s forwards;
+}
+@keyframes headshotAnimation {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animationChild {
+  transition: transform 1s;
+}
+.animationParent:hover .animationChild {
+  transform: translateX(20%);
+}

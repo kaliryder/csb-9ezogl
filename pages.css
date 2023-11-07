@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+video {
+  text-align: center;
+  padding-top: 10px;
+}
+div {
+  text-align: center;
+  padding-top: 30px;
+}
+a {
+  text-decoration-line: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  border: 2px solid black;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+.title {
+  text-align: center;
+}
+.sculptureVid,
+.digitalVid {
+  padding: 0px;
+}
+.active {
+  background-color: blue;
+  border: 2px solid blue;
+  color: white;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+.igButton {
+}
